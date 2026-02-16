@@ -1,24 +1,9 @@
-# README
+# Micro Reddit
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Difficulties faced
+- I did `belongs_to :user, :post` in Comment Model which was throwing a **NoMethodError: No 'arity' method for symbol....**
+- The fix was simple, do
+    - `belongs_to :user`
+    - `belongs_to :post`
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+> Everything else was pretty straightforward
